@@ -41,6 +41,10 @@ app.post("/generate", async (req, res) => {
     res.json({ result: result.response.text() });
 });
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 // Start the server
 app.listen(8000, () => {
     console.log('Server is running on port 8000');
